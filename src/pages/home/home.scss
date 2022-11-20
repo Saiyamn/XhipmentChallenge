@@ -1,0 +1,63 @@
+.home {
+  .home-contents {
+    background-color: #f0f0f0;
+    height: calc(100vh - 50px);
+  }
+
+  .home-contents-wrapper {
+    display: flex;
+    padding: 10px 30px;
+    gap: 50px;
+
+    @media screen and (max-width: 1000px) {
+      flex-direction: column;
+    }
+
+    .user-details-section {
+      flex: 1;
+    }
+
+    .post-section {
+      flex: 3;
+      padding: 0px 20px;
+
+      .sign-in-container {
+        background-color: rgb(126, 204, 230);
+        border-radius: 10px;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        p {
+          color: #f0f0f0;
+          font-size: 20px;
+          letter-spacing: 0.3px;
+        }
+
+        div {
+          padding: 10px;
+          margin-top: 15px;
+          border-radius: 20px;
+          background-color: white;
+          color: rgb(63, 191, 233);
+          cursor: pointer;
+          letter-spacing: 0.3px;
+        }
+      }
+
+      .posts {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        margin-top: 20px;
+        width: 100%;
+      }
+    }
+
+    .misc-details-section {
+      flex: 0;
+    }
+  }
+}
